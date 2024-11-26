@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP - genarater  miniproject -by Amit badiger</title>
+    <link rel="stylesheet" href="style.css">
+    <script  defer src="script.js" type="text/javascript"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "CbbnUWe0j0msm4znk",
+      });
+   })();
+</script>
+</head>
+<body>
+    <div class="container step1">
+        <h2>OTP Verification</h2>
+        <br/>
+        <h4>Your OTP will receive to your email with one-time password</h4>
+          
+        <div class="form-group">
+            <input type="email"  id="email" placeholder="Enter your E-mail" onkeyup="validateEmail(this.value)">
+        </div>
+        <button class="nxbtn">NEXT&rarr;</button>
+    </div>
+
+    <div class="container step2">
+        <h2>OTP Verification</h2>
+        <br/>
+        <h4>Enter your one-time password:</h4>
+        <p>Enter the one-time password has been sent to <span id="verifyemail"></span></p>
+          
+        <div class="otp-form">
+            <p>Enter the 4 digit code for received on the email</p>
+            <div class="otp-group">
+                <input type="number" />
+                <input type="number" />
+                <input type="number"/>
+                <input type="number"/>
+            </div>
+            <p>
+                not your email? / Didn't receive the code?
+                <a href="javascript:void(0)" onclick="chengepage()">Try Again</a>
+            </p>
+        </div>
+        <button class="verifybutton">verify&rarr;</button>
+    </div>
+
+    <div class="container step3">
+        <h2>congrats!!</h2>
+        <p>wel come to home page</p>
+        <br/>
+        <img src="logo.jpg" alt="">
+        <h2>Thank you</h2>
+        <p>you OTP Verification has been successfully completed</p>
+        
+    </div>
+
+    
+
+    
+</body>
+</html>
